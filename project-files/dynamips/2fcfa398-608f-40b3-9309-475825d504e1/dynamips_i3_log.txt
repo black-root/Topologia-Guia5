@@ -1,0 +1,37 @@
+Sep 25 16:21:55.246 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Sep 25 16:21:55.246 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 34357.
+Sep 25 16:21:55.256 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 25 16:21:55.257 HYPERVISOR: exec_cmd: hypervisor working_dir /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips 
+Sep 25 16:21:55.257 GENERAL: working_dir=/home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips
+Sep 25 16:21:55.257 HYPERVISOR: exec_cmd: hypervisor working_dir /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/d75fe1b4-d91f-42c7-9edd-21704aef89c7 
+Sep 25 16:21:55.257 GENERAL: working_dir=/home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/d75fe1b4-d91f-42c7-9edd-21704aef89c7
+Sep 25 16:21:55.257 HYPERVISOR: exec_cmd: vm create R14 14 c3600 
+Sep 25 16:21:55.270 VM: VM R14 created.
+Sep 25 16:21:55.270 HYPERVISOR: exec_cmd: vm set_con_tcp_port R14 5013 
+Sep 25 16:21:55.271 HYPERVISOR: exec_cmd: c3600 get_mac_addr R14 
+Sep 25 16:21:55.271 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:21:55.271 HYPERVISOR: exec_cmd: vm slot_add_binding R14 2 0 NM-4E 
+Sep 25 16:21:55.272 HYPERVISOR: exec_cmd: vm set_ios R14 /home/debianyisus/GNS3/images/IOS/c3640-ik2s-mz.121-27b.image 
+Sep 25 16:21:55.273 HYPERVISOR: exec_cmd: vm set_ram R14 192 
+Sep 25 16:21:55.273 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:21:55.273 HYPERVISOR: exec_cmd: vm set_idle_pc R14 0x603790c0 
+Sep 25 16:21:55.274 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:21:55.274 HYPERVISOR: exec_cmd: vm slot_add_binding R14 3 0 NM-16ESW 
+Sep 25 16:21:55.274 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:21:55.275 HYPERVISOR: exec_cmd: vm slot_add_binding R14 0 0 NM-1FE-TX 
+Sep 25 16:21:55.275 HYPERVISOR: exec_cmd: vm set_nvram R14 256 
+Sep 25 16:21:55.275 HYPERVISOR: exec_cmd: c3600 set_mac_addr R14 cc0e.21b0.0000 
+Sep 25 16:21:55.276 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:21:55.276 HYPERVISOR: exec_cmd: vm slot_add_binding R14 1 0 NM-1E 
+Sep 25 16:21:56.003 HYPERVISOR: exec_cmd: nio create_udp udp-afbb0fdf-6b47-47dd-8de5-32da386d3ba8 10008 127.0.0.1 10009 
+Sep 25 16:21:56.022 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R14 1 0 udp-afbb0fdf-6b47-47dd-8de5-32da386d3ba8 
+Sep 25 16:21:56.023 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:37:00.880 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:37:00.881 HYPERVISOR: exec_cmd: vm extract_config R14 
+Sep 25 16:37:01.244 HYPERVISOR: exec_cmd: vm get_status R14 
+Sep 25 16:37:01.245 HYPERVISOR: exec_cmd: vm extract_config R14 
+Sep 25 16:37:01.246 HYPERVISOR: exec_cmd: vm delete R14 
+Sep 25 16:37:01.247 VM: VM R14 destroyed.
+Sep 25 16:37:01.248 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 25 16:37:01.412 HYPERVISOR: Stopped.
+Sep 25 16:37:01.413 GENERAL: reset done.

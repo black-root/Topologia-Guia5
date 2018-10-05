@@ -1,0 +1,68 @@
+Sep 27 22:46:58.288 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Sep 27 22:46:58.288 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54901.
+Sep 27 22:46:58.301 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 27 22:46:58.302 HYPERVISOR: exec_cmd: hypervisor working_dir /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips 
+Sep 27 22:46:58.302 GENERAL: working_dir=/home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips
+Sep 27 22:46:58.303 HYPERVISOR: exec_cmd: hypervisor working_dir /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/71401aee-7087-4ac7-9571-a7ed5a2c2b0d 
+Sep 27 22:46:58.303 GENERAL: working_dir=/home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/71401aee-7087-4ac7-9571-a7ed5a2c2b0d
+Sep 27 22:46:58.304 HYPERVISOR: exec_cmd: vm create R9 8 c3600 
+Sep 27 22:46:58.304 VM: VM R9 created.
+Sep 27 22:46:58.306 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5007 
+Sep 27 22:46:58.307 HYPERVISOR: exec_cmd: c3600 get_mac_addr R9 
+Sep 27 22:46:58.308 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:46:58.309 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 0 NM-1FE-TX 
+Sep 27 22:46:58.311 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:46:58.312 HYPERVISOR: exec_cmd: vm set_idle_pc R9 0x603790c0 
+Sep 27 22:46:58.313 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:46:58.313 HYPERVISOR: exec_cmd: vm slot_add_binding R9 3 0 NM-16ESW 
+Sep 27 22:46:58.314 HYPERVISOR: exec_cmd: vm set_nvram R9 256 
+Sep 27 22:46:58.315 HYPERVISOR: exec_cmd: vm set_ram R9 192 
+Sep 27 22:46:58.316 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:46:58.316 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 NM-1E 
+Sep 27 22:46:58.317 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:46:58.317 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 NM-4E 
+Sep 27 22:46:58.318 HYPERVISOR: exec_cmd: vm set_ios R9 /home/debianyisus/GNS3/images/IOS/c3640-ik2s-mz.121-27b.image 
+Sep 27 22:46:58.319 HYPERVISOR: exec_cmd: c3600 set_mac_addr R9 cc08.2b24.0000 
+Sep 27 22:47:00.068 HYPERVISOR: exec_cmd: nio create_udp udp-8c1ab1e8-01f2-4947-9bc3-71eed850554b 10070 127.0.0.1 10071 
+Sep 27 22:47:00.088 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 0 udp-8c1ab1e8-01f2-4947-9bc3-71eed850554b 
+Sep 27 22:47:00.088 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:47:00.257 HYPERVISOR: exec_cmd: nio create_udp udp-24eba316-4ef0-4e92-b88f-f3582bbad3c9 10080 127.0.0.1 10081 
+Sep 27 22:47:00.258 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 2 1 udp-24eba316-4ef0-4e92-b88f-f3582bbad3c9 
+Sep 27 22:47:00.258 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:47:00.509 HYPERVISOR: exec_cmd: nio create_udp udp-2b6f0e0b-0bb9-40ca-8dd9-d316f04bc64a 10096 127.0.0.1 10097 
+Sep 27 22:47:00.510 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 2 0 udp-2b6f0e0b-0bb9-40ca-8dd9-d316f04bc64a 
+Sep 27 22:47:00.510 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:47:43.620 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Sep 27 22:47:43.620 VM: VM Ghost created.
+Sep 27 22:47:43.621 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/debianyisus/GNS3/images/IOS/c3640-ik2s-mz.121-27b.image 
+Sep 27 22:47:43.621 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Sep 27 22:47:43.621 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/c3640-ik2s-mz.121-27b.image-192.ghost 
+Sep 27 22:47:43.622 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Sep 27 22:47:43.622 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 27 22:47:43.622 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Sep 27 22:47:43.623 HYPERVISOR: exec_cmd: vm start Ghost 
+Sep 27 22:47:44.180 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Sep 27 22:47:44.180 HYPERVISOR: exec_cmd: vm stop Ghost 
+Sep 27 22:47:44.253 VM: VM Ghost shutdown.
+Sep 27 22:47:44.253 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Sep 27 22:47:44.254 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Sep 27 22:47:44.254 VM: VM Ghost destroyed.
+Sep 27 22:47:44.255 HYPERVISOR: exec_cmd: vm set_ghost_status R9 2 
+Sep 27 22:47:44.256 HYPERVISOR: exec_cmd: vm set_ghost_file R9 /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/c3640-ik2s-mz.121-27b.image-192.ghost 
+Sep 27 22:47:44.256 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 27 22:47:44.256 HYPERVISOR: exec_cmd: vm set_config R9 configs/i8_startup-config.cfg 
+Sep 27 22:47:44.257 HYPERVISOR: exec_cmd: vm start R9 
+Sep 27 22:48:14.476 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 27 22:49:15.617 HYPERVISOR: exec_cmd: vm set_ios R9 /home/debianyisus/GNS3/images/IOS/c3640-ik2s-mz.121-27b.image 
+Sep 28 00:28:44.913 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 28 00:30:24.724 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 28 00:30:24.726 HYPERVISOR: exec_cmd: vm stop R9 
+Sep 28 00:30:24.837 VM: VM R9 shutdown.
+Sep 28 00:30:24.838 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 28 00:30:25.539 HYPERVISOR: exec_cmd: vm get_status R9 
+Sep 28 00:30:25.540 HYPERVISOR: exec_cmd: vm extract_config R9 
+Sep 28 00:30:25.543 HYPERVISOR: exec_cmd: vm delete R9 
+Sep 28 00:30:25.543 VM: VM R9 destroyed.
+Sep 28 00:30:25.544 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 28 00:30:25.743 HYPERVISOR: Stopped.
+Sep 28 00:30:25.743 GENERAL: reset done.

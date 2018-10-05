@@ -1,0 +1,34 @@
+Oct 05 17:42:23.217 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Oct 05 17:42:23.217 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50033.
+Oct 05 17:42:23.227 HYPERVISOR: exec_cmd: hypervisor version 
+Oct 05 17:42:23.227 HYPERVISOR: exec_cmd: hypervisor working_dir /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips 
+Oct 05 17:42:23.227 GENERAL: working_dir=/home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips
+Oct 05 17:42:23.227 HYPERVISOR: exec_cmd: hypervisor working_dir /home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/ad2a26df-4915-4775-b16f-384b4f85f6c6 
+Oct 05 17:42:23.227 GENERAL: working_dir=/home/debianyisus/Documentos/Comunicaciones/Guias/Guia5/Guia5/project-files/dynamips/ad2a26df-4915-4775-b16f-384b4f85f6c6
+Oct 05 17:42:23.227 HYPERVISOR: exec_cmd: vm create R11 10 c3600 
+Oct 05 17:42:23.227 VM: VM R11 created.
+Oct 05 17:42:23.228 HYPERVISOR: exec_cmd: vm set_con_tcp_port R11 5010 
+Oct 05 17:42:23.228 HYPERVISOR: exec_cmd: c3600 get_mac_addr R11 
+Oct 05 17:42:23.228 HYPERVISOR: exec_cmd: vm set_ios R11 /home/debianyisus/GNS3/images/IOS/c3640-ik2s-mz.121-27b.image 
+Oct 05 17:42:23.229 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:23.229 HYPERVISOR: exec_cmd: vm set_idle_pc R11 0x603790c0 
+Oct 05 17:42:23.229 HYPERVISOR: exec_cmd: vm set_ram R11 192 
+Oct 05 17:42:23.229 HYPERVISOR: exec_cmd: vm set_nvram R11 256 
+Oct 05 17:42:23.229 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:23.229 HYPERVISOR: exec_cmd: vm slot_add_binding R11 2 0 NM-4E 
+Oct 05 17:42:23.230 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:23.230 HYPERVISOR: exec_cmd: vm slot_add_binding R11 1 0 NM-1E 
+Oct 05 17:42:23.230 HYPERVISOR: exec_cmd: c3600 set_mac_addr R11 cc0a.2b42.0000 
+Oct 05 17:42:23.230 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:23.230 HYPERVISOR: exec_cmd: vm slot_add_binding R11 3 0 NM-16ESW 
+Oct 05 17:42:23.231 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:23.231 HYPERVISOR: exec_cmd: vm slot_add_binding R11 0 0 NM-1FE-TX 
+Oct 05 17:42:23.521 HYPERVISOR: exec_cmd: nio create_udp udp-06f4f7b0-93c3-4641-9eba-f1bb492b7fe8 10010 127.0.0.1 10011 
+Oct 05 17:42:23.546 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 1 0 udp-06f4f7b0-93c3-4641-9eba-f1bb492b7fe8 
+Oct 05 17:42:23.546 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:23.617 HYPERVISOR: exec_cmd: nio create_udp udp-943a8764-be03-4d4c-a765-63243d3ba7b4 10014 127.0.0.1 10015 
+Oct 05 17:42:23.619 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 2 1 udp-943a8764-be03-4d4c-a765-63243d3ba7b4 
+Oct 05 17:42:23.619 HYPERVISOR: exec_cmd: vm get_status R11 
+Oct 05 17:42:24.405 HYPERVISOR: exec_cmd: nio create_udp udp-d765f64a-92ee-4096-abb9-8fc6e4d37002 10058 127.0.0.1 10059 
+Oct 05 17:42:24.406 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R11 2 0 udp-d765f64a-92ee-4096-abb9-8fc6e4d37002 
+Oct 05 17:42:24.406 HYPERVISOR: exec_cmd: vm get_status R11 
